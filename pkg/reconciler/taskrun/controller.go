@@ -87,6 +87,7 @@ func NewNamespacesScopedController(namespaces []string) func(ctx context.Context
 				SkipStatusUpdates: true,
 				ConfigStore:       cfgStore,
 				FinalizerName:     "chains.tekton.dev/taskrun",
+				AgentName:         "tekton-chains-controller",
 			}
 		})
 
