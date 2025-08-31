@@ -91,6 +91,7 @@ func NewNamespacesScopedController(namespaces []string) func(ctx context.Context
 				SkipStatusUpdates: true,
 				ConfigStore:       cfgStore,
 				FinalizerName:     "chains.tekton.dev/pipelinerun", // TODO: unique name required?
+				AgentName:         "tekton-chains-controller",
 			}
 		})
 
